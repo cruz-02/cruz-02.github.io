@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ricardo Cruz</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="/assets/CV_RicardoCruz.pdf" target="_blank">CV</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ricardo Cruz</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="/assets/CV_RicardoCruz.pdf" target="_blank">CV</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <div id="wrapper">
+
+      <aside id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.JPG" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Ricardo Cruz</p>
+            <p class="section__text__p2">Robotics & Digital Systems</p>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/rcruz02" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn" class="icon"></a>
+                <a href="https://github.com/cruz-02" target="_blank"><img src="./assets/github.png" alt="GitHub" class="icon"></a>
+                <a href="mailto:rcriorard@gmail.com" target="_blank"><img src="./assets/email.png" alt="Email" class="icon"></a>
+            </div>
+        </div>
+      </aside>
+
+
+      <main id="content">
+
+        <section id="about">
+          <h1>About Me</h1>
+          <p class="project-link">
+            Hello! I'm a soon-to-be graduate from <a href="https://tec.mx/es" target="_blank">Tec de Monterrey</a>, Campus Monterrey, Mexico, with a bachelor's degree in Robotics and Digital Systems. 
+            I'm passionate about robotics and AI.
+          </p>
+
+          <p> 
+            My passion lies in developing deployable frameworks that can leverage domain specific data for reliability. 
+            While I’m more inclined to Human-Robot Interaction, Robotic Learning, and Mobile Robotics, I ultimately aim to create intelligent systems 
+            that bridge the gap between research and practical, real-world solutions.  
+          </p>
+          
+          <p class="project-link"> 
+            My previous projects have required a combination of multidisciplinary skills, such as electronics, 
+            mechanics, and machine learning. This convergence of diverse areas is how I like to define robotics—a field where interdisciplinary expertise 
+            comes together to solve complex problems. 
+            <b>I invite you to explore my <a href="#portfolio">portfolio</a>, where these skills and their applications are showcased in detail. </b>
+          </p>
+
+          <p class="project-link"> 
+            During my studies, I’ve had multiple first-hand research experience. I was part of <a href="https://vanttec.com/" target="_blank">VantTec</a>, 
+            a student group at Tec de Monterrey 
+            focused on the research and development of autonomous vehicles, where I led the localization efforts for an Unmanned Underwater Vehicle (UUV).
+            As part of my studies, I participated in an exchange program at <a href="https://www.mcgill.ca/" target="_blank">McGill University</a>, where 
+            I contributed to developing an 
+            innovative approach to acoustic sensing using accessible, off-the-shelf products. Last summer, 
+            I participated in <a href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University’s</a> 
+            <a href="https://riss.ri.cmu.edu/" target="_blank">Robotics Institute Summer Scholars (RISS) </a>
+            program, where I worked in social robot navigation in a shared airspace.
+          </p>
+ 
+          <h2>Experience</h2>
+          <h3>Carnegie Mellon University, Summer Scholar</h3>
+          <h5>Jun 2024 - Aug 2024</h5>
+          <p class="project-link"> 
+            As part of the 2024 Robotics Institute Summer Scholars (RISS), I was a research intern at 
+            <a href="https://scholar.google.com/citations?user=jizMCFAAAAAJ&hl=en" target="_blank">Prof. Jean Oh's </a>
+            <a href="https://cmubig.github.io/" target="_blank">roBot Intelligence Group (BIG).</a>
+            I was under the mentorship of PhD student <a href="https://scholar.google.com/citations?user=qF73bcYAAAAJ&hl=en" target="_blank">Ingrid Navarro.</a>
+            I worked on improving safe navigation in the domain of general aviation.
+          </p>
+          <h3>McGill University, Undergraduate Research Trainee</h3>
+          <h5>Aug 2023 - Sep 2023</h5>
+          <p class="project-link"> 
+            I worked full-time in the 
+            <a href="https://macro.lab.mcgill.ca/" target="_blank">MACRObotics</a> 
+            group under the supervision of 
+            <a href="https://scholar.google.com/citations?user=FPtpy7gAAAAJ&hl=en" target="_blank">Prof. Audrey Sedal</a>.
+            I worked on integrating a sensor into soft robot wheels to enable tactile sensing.
+          </p>
+          <h3>VantTec, Localization Team Captain</h3>
+          <h5>Aug 2022 - Jun 2023</h5>
+          <p> 
+            I was in charge of underwater acoustic localization for the UUV.
+            I offered a cost-effective solution instead of relying on a sonar system. 
+            I employed a hydrophone array and the Time Difference of Arrival algorithm to localize different sound sources and then performed trilateration. </p>
+          <h2>Education</h2>
+          <h3>Tec de Monterrey</h3>
+          <h4>B.S. in Robotics and Digital Systems</h4>
+          <p>Aug 2020 - Dec 2024 <b>GPA: 94/100</b></p>
+
+        </section>
+        <section id="portfolio">
+          <h1 class="title">Portfolio</h1>
+          <div class="portfolio-row">
+            <div class="portfolio-img">
+              <img src="./assets/SafeAir.gif" alt="SafeAir Gif" />
+            </div>
+            <div class="portfolio-details">
+              <h2>SafeAir: Safety-informed Prediction and Navigation under Distribution
+                Shifts in General Aviation</h2>
+              <p>
+                A framework that seeks to improve navigation performance in unseen, safety-criticial scenarios by leveraging existing 
+                datasets and trajectory prediction algorithms.
+                
+              </p>
+              <ul>
+                <li>Adapted an existing transformer model (TF) to extract aviation-specific features</li>
+                <li> Scored dataset scenarios based on safety-relevant metrics and created a distribution shift, with the highest scoring being the most 
+                  safety-criticial and thus out of distribution (OOD).
+                </li>
+                <li> Enhanced model robustness by incorporating scenario safety score features and integrating collision avoidance remediation into the loss function.</li>
+                <li> Improved collision avoidance by 70% when tested on out of distribution scenarios.</li>
+                <li> Integrated the transformer model into a Monte Carlo Tree Search for socially-aware, long-horizon trajectory planning.</li>
+              </ul> 
+            </div>
+            <div class="portfolio-item">
+              <p class="project-dates"> Jun 2024 - Aug 2024</p>
+              <h4 class="project-link"><a href="/assets/working-paper-SafeAir.pdf" target="_blank">Working Paper</a></h4>
+              <h4 class="project-link"><a href="/assets/SafeAir-Poster.pdf" target="_blank">Poster</a></h4>
+              <h4 class="project-link"><a href="https://youtu.be/pWNz9bJ6AcI" target="_blank">Video</a></h4>
+            </div>
+          </div>
+          <div class="portfolio-row">
+            <div class="portfolio-img">
+              <img src="./assets/PuzzleBot2.gif" alt="Payload Delivery Demo" />
+            </div>
+            <div class="portfolio-details">
+              <h2>Puzzlebot 2</h2>
+              <p>
+                Manchester Robotics' research kit for autonomous vehicle development: Obstacle Avoidance and Payload Delivery
+              </p>
+              <ul>
+                <li> Used ArUco markers and an extended Kalman filter for localization and pose estimation </li>
+                <li> Avoided LiDAR detected obstacles with 'Bug 0' algorithm</li>
+                <li> Designed and mounted a 3D printed gripper for payload transportation.</li>
+                <li> Implemented a state-space controller to optimize robot operation efficiency.</li>
+              </ul> 
+            </div>
+            <div class="portfolio-item">
+              <p class="project-dates"> Mar 2024 - Jun 2024</p>
+              <h4 class="project-link"><a href="/assets/PuzzleBot2-Report.pdf" target="_blank">Project Report</a></h4>
+              <h6>(In Spanish)</h6>
+              <h4 class="project-link"><a href="/assets/PuzzleBot2-Poster.pdf" target="_blank">Poster</a></h4>
+              <h4 class="project-link"><a href="https://youtu.be/ROwthE9g7qQ" target="_blank">Video</a></h4>
+            </div>
+          </div>
+            <div class="portfolio-row">
+            <div class="portfolio-img">
+              <img src="./assets/HotWheels.gif" alt="Project 2 Image" />
+            </div>
+            <div class="portfolio-details">
+              <h2>Acoustic tactile sensing for mobile robot wheels</h2>
+              <p>
+                Acoustic tactile sensing for mobile robots utilizing an off-the-shelf rangefinder on a deformable soft wheel; 
+                enabling terrain classification, obstacle detection and classification, and slip detection. 
+              </p>
+              <ul>
+                <li>Established a communication architecture, enabling integration of ROS2, TCP/IP, and SPI protocols.</li>
+                <li> Developed scripts in multiple programming languages for microcontrollers and signal processing.</li>
+                <li> Enabled real-time visualization.</li>
+                <li> Generated an acoustic dataset to train a self-supervised Natural Language Processing model.</li>
+              </ul> 
+            </div>
+            <div class="portfolio-item">
+              <p class="project-dates"> Aug 2023 - Dec 2023</p>
+              <h4 class="project-link"><a href="/assets/working-paper-McGill.pdf" target="_blank">Working Paper</a></h4>
+              <h4 class="project-link"><a href="https://youtu.be/uPzouZPIbuo" target="_blank">Video</a></h4>
+            </div>
+          </div>
+          
+          <div class="portfolio-row">
+            <div class="portfolio-img">
+              <img src="./assets/PuzzleBot1.gif" alt="Traffic Sign Recognition Demo" />
+            </div>
+            <div class="portfolio-details">
+              <h2>Puzzlebot 1</h2>
+              <p>
+                Manchester Robotics' research kit for autonomous vehicle development: Computer Vision and Trajectory Planning.
+              </p>
+              <ul>
+                <li>Developed a line follower algorithm using Canny Edge Detection for lane recognition and a PID controller for smoother performance</li>
+                <li> Created a traffic sign dataset and applied the YOLOv8 model for recognition, thus contributing to trajectory planning</li>
+              </ul> 
+            </div>
+            <div class="portfolio-item">
+              <p class="project-dates"> Mar 2023 - Jun 2023</p>
+              <h4 class="project-link"><a href="/assets/PuzzleBot1-Report.pdf" target="_blank">Project Report</a></h4>
+              <h6>(In Spanish)</h6>
+              <h4 class="project-link"><a href="https://youtu.be/gcK3CbmAWJc?si=5hCFPblDVjZ9C7ni" target="_blank">Video</a></h4>
+            </div>
+          </div>
+          <div class="portfolio-row">
+            <div class="portfolio-img">
+              <img src="./assets/SmartTire-system.png" alt="Project 2 Image" />
+            </div>
+            <div class="portfolio-details">
+              <h2>Smart Tire Pressure System</h2>
+              <p>
+                With John Deree as a training partner, learned about RTOS and environmentally responsive embedded systems. Simulated a tractor wheel using a pressurized 
+                container and integrated hardware to develop a setpoint-compliant system.
+              </p>
+              <ul>
+                <li>Built a hardware system integrating microcontrollers, a John Deere unit, and various peripherals 
+                  with communication protocols such as: CAN, I2C, and SPI</li>
+                <li> Maded a website for PSI setpoint visualization and control.</li>
+                <li> Implemented a PID controller to ensure precise control and prevent overshooting of setpoints.</li>
+              </ul> 
+            </div>
+            <div class="portfolio-item">
+              <p class="project-dates"> Sep 2022 - Dec 2022</p>
+              <h4 class="project-link"><a href="/assets/SmartTire-report.pdf" target="_blank">Project Report</a></h4>
+              <h6>(In Spanish)</h6>
+              <h4 class="project-link"><a href="https://youtu.be/bPZvAcGnuVc" target="_blank">Video</a></h4>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+    </div>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="/assets/CV_RicardoCruz.pdf" target="_blank">CV</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
