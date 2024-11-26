@@ -435,6 +435,9 @@ article .icon {
 .portfolio-details {
   flex: 1; /* Allow text to take up remaining space */
   text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align text from the top */
 }
 
 .portfolio-details h2 {
